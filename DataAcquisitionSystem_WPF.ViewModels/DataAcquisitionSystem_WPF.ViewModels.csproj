@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAcquisitionSystem_WPF.Infrastructure\DataAcquisitionSystem_WPF.Infrastructure.csproj" />
+    <ProjectReference Include="..\DataAcquisitionSystem_WPF.ModbusService\DataAcquisitionSystem_WPF.ModbusService.csproj" />
+    <ProjectReference Include="..\MvvmFramework\MvvmFramework.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>DataAcquisitionSystem_WPF</AssemblyName>
+    <RootNamespace>DataAcquisitionSystem_WPF</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DesignTime\" />
+    <Folder Include="Views\Contents\" />
+    <Folder Include="Views\StatusBar\" />
+    <Folder Include="Views\SideBar\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Windsor" Version="5.1.2" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
+    <PackageReference Include="MvvmLight" Version="5.4.1.1" />
+    <PackageReference Include="Prism.Autofac.Mutable.Wpf" Version="3.0.0" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAcquisitionSystem_WPF.Infrastructure\DataAcquisitionSystem_WPF.Infrastructure.csproj" />
+    <ProjectReference Include="..\DataAcquisitionSystem_WPF.ModbusService\DataAcquisitionSystem_WPF.ModbusService.csproj" />
+    <ProjectReference Include="..\MvvmFramework\MvvmFramework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\icon.png" />
+  </ItemGroup>
+
+</Project>
